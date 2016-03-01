@@ -1,8 +1,13 @@
 language: android
 
+addons:
+  artifacts:
+    s3_region: us-east-1
+
 android:
   components:
     - tools
+    - platform-tools
     - build-tools-23.0.2
     - android-23
     - extra-android-m2repository
